@@ -1,3 +1,4 @@
+#name
 controller_list:
     - name: /mp500lwa4d/arm_trajectory_controller
       action_ns: follow_joint_trajectory
