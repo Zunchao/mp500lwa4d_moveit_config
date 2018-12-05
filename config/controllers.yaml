@@ -1,4 +1,5 @@
 controller_list:
+<<<<<<< HEAD
     - name: /mp500lwa4d/arm_trajectory_controller
       action_ns: follow_joint_trajectory
       type: FollowJointTrajectory
@@ -11,3 +12,24 @@ controller_list:
         - arm_5_joint
         - arm_6_joint
         - arm_7_joint
+=======
+  - name: arm/joint_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - arm_1_joint
+      - arm_2_joint
+      - arm_3_joint
+      - arm_4_joint
+      - arm_5_joint
+      - arm_6_joint
+      - arm_7_joint
+  - name: gripper_controller
+    action_ns: gripper_action
+    type: GripperCommand
+    default: true
+    joints:
+      - gripper_finger_left_joint
+      - gripper_finger_right_joint
+>>>>>>> upstream/master
